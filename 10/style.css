@@ -1,0 +1,91 @@
+body {
+    /* background: #212121 url(https://i.stack.imgur.com/pFd9s.jpg) no-repeat 0 0 /cover;
+    margin: 0; */
+    background-color: rgb(255, 255, 255);
+    /* background: url(IMG_1716.PNG); */
+    background-size: 120px 90px;
+    background-repeat: no-repeat;
+    
+  }
+  img {
+    border-radius: 8px;
+  }
+
+  #shutter {
+    opacity: 0;
+    transition: all 30ms ease-in;/* Shutter speed */
+    position: fixed;
+    height: 0%;
+    width: 0%;
+    pointer-events: none;
+  
+    background-color: white;/* Shutter Color */
+    
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+  }
+  #shutter.on {
+    opacity: 1;/* Shutter Transparency */
+    height: 100%;
+    width: 100%;
+  }
+
+
+#submit {
+    background-color: #bc0023;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    font-family: 'Courier New';
+    border-radius: 50%;
+    filter: blur(5px);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    transform: scale(2.5);
+
+}
+#submit:hover {
+ border: none;
+ background: beige;
+ box-shadow: 0px 0px 1px #c50024;
+ transform: scale(1);
+ transition: width 2s, height 2s, transform 2s ease-in-out;
+ transition: all 2s linear;
+}
+
+
+.pill {
+  width: 200px;
+  height: 60px;
+  background-color: rgb(255, 247, 225);
+  /* border-radius: 100px; */
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  animation-name: phill;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  filter: blur(3px);
+
+}
+
+@keyframes phill {
+  0%   {background-color: #9d102a;}
+  25%  {background-color: rgb(170, 29, 53);}
+  50%  {background-color: rgb(198, 55, 72);}
+  100% {background-color: rgb(255, 247, 225);}
+  
+}
+
+
+
+
